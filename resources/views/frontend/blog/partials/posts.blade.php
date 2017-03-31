@@ -1,5 +1,5 @@
 @foreach ($posts as $post)
-    <div class="post-preview" style="position: absolute;">
+    <div class="post-preview">
             <div>
                 <h2 class="post-title">
                     <a href="{{ $post->url($tag) }}">{{ $post->title }}</a>
@@ -16,13 +16,11 @@
                 <p class="postSubtitle">
                     {{ str_limit($post->subtitle, config('blog.frontend_trim_width')) }}
                 </p>
-
-                <p style="font-size: 13px"><a href="{{ $post->url($tag) }}">READ MORE...</a></p>
             </div>
 
-            <div style="position:relative; float:right;margin-left: 10px;">
+            <div>
                 <a href="{{ $post->url($tag) }}"><img style=" height: 150px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
-           </div>
+            </div>
 
     </div>
     <hr>
