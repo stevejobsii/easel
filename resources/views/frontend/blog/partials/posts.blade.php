@@ -1,5 +1,5 @@
 @foreach ($posts as $post)
-    <div class="post-preview" style="position: relative;">
+    <div class="post-preview" style="position: absolute;">
             <div>
                 <h2 class="post-title">
                     <a href="{{ $post->url($tag) }}">{{ $post->title }}</a>
