@@ -16,7 +16,7 @@
                 </p>
             </div>
 
-            <div style="float: left;">
+            <div>
                 <a href="{{ $post->url($tag) }}"><img style=" height: 200px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
             </div>
 
