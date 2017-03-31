@@ -1,10 +1,10 @@
 @foreach ($posts as $post)
-    <div class="post-preview">
-        <h2 class="post-title">
-            <a href="{{ $post->url($tag) }}">{{ $post->title }}</a>
-        </h2>
-      <div style="position: relative;">
+    <div class="post-preview" style="position: relative;">
             <div>
+                <h2 class="post-title">
+                    <a href="{{ $post->url($tag) }}">{{ $post->title }}</a>
+                </h2>
+
                 <p class="post-meta">
                     {{ $post->published_at->diffForHumans() }} &#183; {{ $post->readingTime() }} MIN READ
                     <br>
@@ -23,8 +23,6 @@
             <div style="position:relative; float:right;margin-left: 20px;">
                 <a href="{{ $post->url($tag) }}"><img style=" height: 200px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
            </div>
-        
-      </div>
 
     </div>
     <hr>
