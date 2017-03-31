@@ -20,8 +20,8 @@
                 <p style="font-size: 13px"><a href="{{ $post->url($tag) }}">READ MORE...</a></p>
             </div>
 
-            <div style="position:relative; float:right;margin-left: 20px;">
-                <a href="{{ $post->url($tag) }}"><img style=" height: 200px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
+            <div style="position:relative; float:right;margin-left: 10px;">
+                <a href="{{ $post->url($tag) }}"><img style=" height: 150px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
            </div>
 
     </div>
