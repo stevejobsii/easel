@@ -15,9 +15,10 @@
                     {{ str_limit($post->subtitle, config('blog.frontend_trim_width')) }}
                 </p>
             </div>
-
-                <a href="{{ $post->url($tag) }}"><img style=" text-align:center;width: 90%;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
-
+            
+            <div  style=" text-align:center;width: 90%;" >
+                <a href="{{ $post->url($tag) }}"><img src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
+            </div>
     </div>
     <hr>
 @endforeach
