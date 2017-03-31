@@ -17,7 +17,7 @@
             </div>
 
             <div>
-                <a href="{{ $post->url($tag) }}"><img style=" height: 200px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
+                <a href="{{ $post->url($tag) }}"><img style=" text-align:center;width: 90%;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
             </div>
 
     </div>
