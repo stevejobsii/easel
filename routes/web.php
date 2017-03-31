@@ -9,8 +9,8 @@ Route::group([
     'prefix' => RouteHelper::getBlogMain(),
 ], function () {
 
-    /* Installation page route. */
-    Route::get('canvas.install', 'Canvas\Http\Controllers\Setup\InstallController@index')->name('canvas.install');
+    /* Installation page route. *///test
+    Route::get('/test', 'Canvas\Http\Controllers\Setup\InstallController@index')->name('canvas.install');
 
     /* Fully-installed and configured routes. */
     Route::group([
