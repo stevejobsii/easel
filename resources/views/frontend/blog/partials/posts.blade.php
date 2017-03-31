@@ -6,8 +6,6 @@
                 </h2>
 
                 <p class="post-meta">
-                    {{ $post->published_at->diffForHumans() }} &#183; {{ $post->readingTime() }} MIN READ
-                    <br>
                     @unless( $post->tags->isEmpty())
                         {!! implode(' ', $post->tagLinks()) !!}
                     @endunless
@@ -18,8 +16,8 @@
                 </p>
             </div>
 
-            <div>
-                <a href="{{ $post->url($tag) }}"><img style=" height: 150px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
+            <div style="float: left;">
+                <a href="{{ $post->url($tag) }}"><img style=" height: 200px;width: auto;" src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
             </div>
 
     </div>
