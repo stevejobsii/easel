@@ -1,5 +1,5 @@
 <header id="header" class="clearfix" data-current-skin="blue">
-    <a href="{!! route('canvas.admin') !!}"><img src="{!! asset('vendor/canvas/assets/images/canvas-logo-white.gif') !!}" class="cl-center" style="width: 100px"></a>
+    <a href="{!! route('canvas.admin') !!}"></a>
     <ul class="header-inner">
         <li id="menu-trigger" data-trigger="#sidebar">
             <div class="line-wrap">
