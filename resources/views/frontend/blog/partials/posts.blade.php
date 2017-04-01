@@ -16,8 +16,8 @@
                 </p>
             </div>
             
-            <div>
-                <a href="{{ $post->url($tag) }}"><img style="width: 90%;"  src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
+            <div style="text-align:center;">
+                <a href="{{ $post->url($tag) }}"><img style="width: 80%;"  src="{{$post->page_image}}" alt="{{ $post->title }}"></a>
             </div>
     </div>
     <hr>
